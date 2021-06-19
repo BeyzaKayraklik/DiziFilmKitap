@@ -1,25 +1,28 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:my_library/diziler.dart';
-import 'package:my_library/hakkinda.dart';
-import 'package:my_library/main.dart';
-import 'package:my_library/rndmDizi.dart';
-import 'package:my_library/rndmFilm.dart';
+import 'package:my_library/Sayfalar/sayfa3.dart';
 
-import 'filmler.dart';
-import 'kitaplar.dart';
+import 'package:my_library/izlenecekler/screens/izleniceklist.dart';
+import 'package:my_library/merakl%C4%B1s%C4%B1na/kitapokumaoran%C4%B1.dart';
+import 'package:my_library/screens/home/components/background.dart';
+import 'package:my_library/sorular/mylibrary.dart';
+import 'package:my_library/yorumlar/yorumdart.dart';
 
-class AnaSayfa extends StatelessWidget {
+import '../../../hakkinda.dart';
+
+
+
+
+
+
+
+class Anasayfa2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: Scaffold(
-           backgroundColor: Colors.white,
-            appBar: AppBar(title: Text("Anasayfa"),
-              backgroundColor: Colors.red[900],),
-            body: Center(
+    return Background(
+
               child:Column(
-               mainAxisAlignment:MainAxisAlignment.center,
+                mainAxisAlignment:MainAxisAlignment.center,
                 children:<Widget>[
 
                   Padding(
@@ -30,7 +33,7 @@ class AnaSayfa extends StatelessWidget {
                       ),
                       onPressed: () => Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => MyLibrary()),
+                        MaterialPageRoute(builder: (context) => soruSayfasi()),
                       ),
                       child: Text('Yazar Kitap Eşleştirme Soruları'),
                     ),
@@ -44,9 +47,9 @@ class AnaSayfa extends StatelessWidget {
                       ),
                       onPressed: () => Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) =>Dizi()),
+                        MaterialPageRoute(builder: (context) =>AnaSayfa3()),
                       ),
-                      child: Text('Dizi Tavsiyeleri'),
+                      child: Text('Öneriler'),
                     ),
                   ),
 
@@ -59,9 +62,9 @@ class AnaSayfa extends StatelessWidget {
                       ),
                       onPressed: () => Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => rndmDizi()),
+                        MaterialPageRoute(builder: (context) => yorumlar()),
                       ),
-                      child: Text('Random Dizi'),
+                      child: Text('Yorumlar'),
                     ),
                   ),
 
@@ -76,9 +79,9 @@ class AnaSayfa extends StatelessWidget {
                       ),
                       onPressed: () => Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => Film()),
+                        MaterialPageRoute(builder: (context) => izleniceklists()),
                       ),
-                      child: Text('Film Tavsiyeleri'),
+                      child: Text('İzlenecekler'),
                     ),
                   ),
 
@@ -90,26 +93,12 @@ class AnaSayfa extends StatelessWidget {
                       ),
                       onPressed: () => Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => rndmFilm()),
+                        MaterialPageRoute(builder: (context) => kitapokumaoran()),
                       ),
-                      child: Text('Random Film '),
+                      child: Text('Dünya kitap okuma oranı(%)'),
                     ),
                   ),
 
-
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 16.0),
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        primary:Colors.red[900],
-                      ),
-                      onPressed: () => Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => Kitap()),
-                      ),
-                      child: Text('Kitap Tavsiyeleri'),
-                    ),
-                  ),
 
 
                   Padding(
@@ -125,9 +114,9 @@ class AnaSayfa extends StatelessWidget {
                       child: Text('Hakkında'),
                     ),
                   ),
-                  ],
+                ],
               ),
-            )));
+            );
   }
 }
 

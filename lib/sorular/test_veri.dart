@@ -1,5 +1,8 @@
-import 'package:my_library/main.dart';
 
+
+
+
+import 'mylibrary.dart';
 
 class TestVeri {
   int soruIndex=0;
@@ -34,16 +37,16 @@ class TestVeri {
 
   }
 
-    bool getSoruyaniti(){
+  bool getSoruyaniti(){
     return _soruBankasi[soruIndex].soruYaniti;
-    }
+  }
 
-     void sonrakisoru(){
+  void sonrakisoru(){
     if(soruIndex+1 <= _soruBankasi.length) {
       soruIndex++;
     }
-     }
-     bool testbittimi(){
+  }
+  bool testbittimi(){
     if(soruIndex+1 >= _soruBankasi.length){
       return true;
     }

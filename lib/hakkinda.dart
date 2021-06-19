@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:my_library/Anasayfa.dart';
+import 'package:my_library/screens/home/body.dart';
+
+
+
+
+
 
 
 class Hakkinda extends StatefulWidget {
@@ -38,7 +43,7 @@ class _HakkindaState extends State<Hakkinda> {
                     primary:Colors.red[900],
                   ),
                   onPressed: () =>Navigator.push(context
-                      , MaterialPageRoute(builder: (context) => AnaSayfa()),
+                      , MaterialPageRoute(builder: (context) => Anasayfa2()),
                   ),
 
                   child : Text('Anasayfaya Dön'),

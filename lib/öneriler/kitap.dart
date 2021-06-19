@@ -40,23 +40,23 @@ class Entry {
 // The entire multilevel list displayed by this app.
 final List<Entry> data = <Entry>[
 
-      Entry('Franz Kafka - Dönüşüm'),
-      Entry('John Steinbeck - Fareler ve İnsanlar'),
-      Entry('Stefan Zweig - Satranç'),
-      Entry('Jose Saramago - Bilinmeyen Adanın Öyküsü'),
-      Entry('Antoine de Saint-Exupery - Küçük Prens'),
-      Entry('Sabahattin Ali - Kürk Mantolu Madonna'),
-      Entry('Hank Moody - Tanrı Hepimizden Nefret Ediyor'),
-      Entry('İhsan Oktay Anar - Puslu Kıtalar Atlası'),
-      Entry('Hermann Hesse - Siddhartha'),
-      Entry('Dostoyevski - Yeraltından Notlar'),
-      Entry('Natalie Babbitt - Ölümsüz Aile'),
-      Entry('Goethe - Genç Wertherin Acıları'),
-      Entry('Uğur Koşar - Yüzleşme'),
-      Entry('George Orwell - Hayvan Çiftliği'),
-      Entry('Albert Camus - Yabancı'),
+  Entry('Franz Kafka - Dönüşüm'),
+  Entry('John Steinbeck - Fareler ve İnsanlar'),
+  Entry('Stefan Zweig - Satranç'),
+  Entry('Jose Saramago - Bilinmeyen Adanın Öyküsü'),
+  Entry('Antoine de Saint-Exupery - Küçük Prens'),
+  Entry('Sabahattin Ali - Kürk Mantolu Madonna'),
+  Entry('Hank Moody - Tanrı Hepimizden Nefret Ediyor'),
+  Entry('İhsan Oktay Anar - Puslu Kıtalar Atlası'),
+  Entry('Hermann Hesse - Siddhartha'),
+  Entry('Dostoyevski - Yeraltından Notlar'),
+  Entry('Natalie Babbitt - Ölümsüz Aile'),
+  Entry('Goethe - Genç Wertherin Acıları'),
+  Entry('Uğur Koşar - Yüzleşme'),
+  Entry('George Orwell - Hayvan Çiftliği'),
+  Entry('Albert Camus - Yabancı'),
 
-    ];
+];
 
 
 

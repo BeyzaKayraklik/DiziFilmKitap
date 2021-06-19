@@ -35,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
     'Modern Family',
     'Ray Donovan',
     'Atypical',
-     'The Dragon Prince',
+    'The Dragon Prince',
     'The Big Bang Theory',
     'One Day at a Time',
     'Glitch Techs',

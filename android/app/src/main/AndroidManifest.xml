@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.my_library">
    <application
-        android:label="my_library"
+        android:label="Dizi Film Kitap"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

@@ -9,17 +9,17 @@ class Dizi extends StatelessWidget {
       home: Scaffold(
 
 
-          appBar: new AppBar(
-            title: new Text('Dizi Tavsiyeleri'),
-            backgroundColor: Colors.red[900],
-            actions: <Widget>[
-              new IconButton(
-                icon: new Icon(Icons.close),
-                onPressed: () => Navigator.of(context).pop(null),
-              ),
-            ],
-            leading: new Container(),
-          ),
+        appBar: new AppBar(
+          title: new Text('Dizi Tavsiyeleri'),
+          backgroundColor: Colors.red[900],
+          actions: <Widget>[
+            new IconButton(
+              icon: new Icon(Icons.close),
+              onPressed: () => Navigator.of(context).pop(null),
+            ),
+          ],
+          leading: new Container(),
+        ),
 
         body: ListView.builder(
           itemBuilder: (BuildContext context, int index) => EntryItem(data[index]),
@@ -123,36 +123,36 @@ final List<Entry> data = <Entry>[
 
     ],
   ),
-      Entry('Komedi Dizileri',
-        <Entry>[
-          Entry('Ted Lasso'),
-          Entry('Chichipatos'),
-          Entry('The Baker and the Beauty'),
-          Entry('Office Girls'),
-          Entry('Modern Farmer'),
-          Entry('Love with Flaws'),
-          Entry('Extraordinary You'),
-          Entry('Miss Lee'),
-          Entry('Onzoshi Boys'),
-          Entry('The Expanding Universe of Ashley Garcia'),
-        ],
-      ),
+  Entry('Komedi Dizileri',
+    <Entry>[
+      Entry('Ted Lasso'),
+      Entry('Chichipatos'),
+      Entry('The Baker and the Beauty'),
+      Entry('Office Girls'),
+      Entry('Modern Farmer'),
+      Entry('Love with Flaws'),
+      Entry('Extraordinary You'),
+      Entry('Miss Lee'),
+      Entry('Onzoshi Boys'),
+      Entry('The Expanding Universe of Ashley Garcia'),
+    ],
+  ),
 
 
-      Entry('Macera Dizileri',
-        <Entry>[
-          Entry('Star Trek: Picard'),
-          Entry('Stargirl'),
-          Entry('Vagrant Queen'),
-          Entry('The Letter for the King'),
-          Entry('The Witcher'),
-          Entry('The Mandalorian'),
-          Entry('Game of Thrones'),
-          Entry('Farscape'),
-          Entry('The Tick'),
-          Entry('Whiskey Cavalier'),
-        ],
-      ),
+  Entry('Macera Dizileri',
+    <Entry>[
+      Entry('Star Trek: Picard'),
+      Entry('Stargirl'),
+      Entry('Vagrant Queen'),
+      Entry('The Letter for the King'),
+      Entry('The Witcher'),
+      Entry('The Mandalorian'),
+      Entry('Game of Thrones'),
+      Entry('Farscape'),
+      Entry('The Tick'),
+      Entry('Whiskey Cavalier'),
+    ],
+  ),
 
 ];
 
