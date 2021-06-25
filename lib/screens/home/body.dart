@@ -1,11 +1,17 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_library/Sayfalar/sayfa3.dart';
+import 'package:my_library/dosya/file_operations.dart';
 
 import 'package:my_library/izlenecekler/screens/izleniceklist.dart';
+
+
+
+
 import 'package:my_library/merakl%C4%B1s%C4%B1na/kitapokumaoran%C4%B1.dart';
 import 'package:my_library/screens/home/components/background.dart';
 import 'package:my_library/sorular/mylibrary.dart';
+
 import 'package:my_library/yorumlar/yorumdart.dart';
 
 import '../../../hakkinda.dart';
@@ -98,6 +104,25 @@ class Anasayfa2 extends StatelessWidget {
                       child: Text('Dünya kitap okuma oranı(%)'),
                     ),
                   ),
+
+
+
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 16.0),
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary:Colors.red[900],
+                      ),
+                      onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => FileOperationsScreen()),
+                      ),
+                      child: Text('Film Kaydet'),
+                    ),
+                  ),
+
+
+
 
 
 
